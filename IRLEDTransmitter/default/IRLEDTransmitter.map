@@ -1,0 +1,449 @@
+Archive member included because of file (symbol)
+
+d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+                              d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o (exit)
+d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+                              serial_streaming.o (__do_copy_data)
+d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                              serial_streaming.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+txbuffer            0x32              serial_streaming.o
+rxbuffer            0x64              serial_streaming.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+LOAD IRLEDTransmitter.o
+LOAD uart.o
+LOAD port.o
+LOAD timer.o
+LOAD serial_streaming.o
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4\libc.a
+LOAD d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x7fc
+ *(.vectors)
+ .vectors       0x00000000       0x26 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table
+                0x00000026       0x10 serial_streaming.o
+ *(.progmem*)
+ .progmem.data  0x00000036       0x56 IRLEDTransmitter.o
+                0x00000036                pwmtable
+                0x0000008c                . = ALIGN (0x2)
+                0x0000008c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x0000008c        0x0 linker stubs
+ *(.trampolines*)
+                0x0000008c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x0000008c                __ctors_start = .
+ *(.ctors)
+                0x0000008c                __ctors_end = .
+                0x0000008c                __dtors_start = .
+ *(.dtors)
+                0x0000008c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x0000008c        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x0000008c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x0000008c        0xc d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000098       0x16 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+                0x00000098                __do_copy_data
+ .init4         0x000000ae       0x10 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                0x000000ae                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000be        0x4 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ *(.init9)
+ *(.text)
+ .text          0x000000c2        0x2 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+                0x000000c2                __bad_interrupt
+                0x000000c2                __vector_6
+                0x000000c2                __vector_3
+                0x000000c2                __vector_13
+                0x000000c2                __vector_17
+                0x000000c2                __vector_7
+                0x000000c2                __vector_5
+                0x000000c2                __vector_4
+                0x000000c2                __vector_9
+                0x000000c2                __vector_2
+                0x000000c2                __vector_15
+                0x000000c2                __vector_8
+                0x000000c2                __vector_14
+                0x000000c2                __vector_10
+                0x000000c2                __vector_16
+                0x000000c2                __vector_18
+ .text          0x000000c4       0xc8 IRLEDTransmitter.o
+                0x000000c4                __vector_1
+                0x000000f0                main
+ .text          0x0000018c       0xc8 uart.o
+                0x000001f6                __vector_12
+                0x000001aa                __vector_11
+                0x0000019a                USART_Transmit
+                0x0000018c                usart_init
+                0x000001a2                USART_Receive
+ .text          0x00000254       0x12 port.o
+                0x00000254                port_init
+ .text          0x00000266       0x28 timer.o
+                0x00000266                timer1_init
+ .text          0x0000028e      0x56a serial_streaming.o
+                0x000003a4                checktxbuffer
+                0x000006d0                convert_to_data
+                0x000003b8                fetch_valid_message
+                0x000002b4                buffer
+                0x000004d8                crc16
+                0x00000654                send_serial_data
+                0x0000056e                convert_to_frame
+                0x00000788                check_serial_data
+ .text          0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .text          0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .text          0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                0x000007f8                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+                0x000007f8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000007f8        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+                0x000007f8                exit
+                0x000007f8                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000007f8        0x4 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000007fc                _etext = .
+
+.data           0x00800060        0x0 load address 0x000007fc
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ .data          0x00800060        0x0 IRLEDTransmitter.o
+ .data          0x00800060        0x0 uart.o
+ .data          0x00800060        0x0 port.o
+ .data          0x00800060        0x0 timer.o
+ .data          0x00800060        0x0 serial_streaming.o
+ .data          0x00800060        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060      0x101
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr4/crtm8.o
+ .bss           0x00800060        0x0 IRLEDTransmitter.o
+ .bss           0x00800060        0x0 uart.o
+ .bss           0x00800060        0x0 port.o
+ .bss           0x00800060        0x0 timer.o
+ .bss           0x00800060       0x6b serial_streaming.o
+                0x00800060                txbuffer_rpos
+                0x00800063                rxbuffer_wpos
+                0x00800061                txbuffer_wpos
+                0x00800062                rxbuffer_rpos
+ .bss           0x008000cb        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_exit.o)
+ .bss           0x008000cb        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_copy_data.o)
+ .bss           0x008000cb        0x0 d:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr4\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x008000cb       0x96 serial_streaming.o
+                0x008000cb                txbuffer
+                0x008000fd                rxbuffer
+                0x00800161                PROVIDE (__bss_end, .)
+                0x000007fc                __data_load_start = LOADADDR (.data)
+                0x000007fc                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800161        0x0
+                0x00800161                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800161                PROVIDE (__noinit_end, .)
+                0x00800161                _end = .
+                0x00800161                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000       0xa0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 IRLEDTransmitter.o
+ .debug_aranges
+                0x00000020       0x20 uart.o
+ .debug_aranges
+                0x00000040       0x20 port.o
+ .debug_aranges
+                0x00000060       0x20 timer.o
+ .debug_aranges
+                0x00000080       0x20 serial_streaming.o
+
+.debug_pubnames
+                0x00000000      0x1e6
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x37 IRLEDTransmitter.o
+ .debug_pubnames
+                0x00000037       0x66 uart.o
+ .debug_pubnames
+                0x0000009d       0x20 port.o
+ .debug_pubnames
+                0x000000bd       0x22 timer.o
+ .debug_pubnames
+                0x000000df      0x107 serial_streaming.o
+
+.debug_info     0x00000000      0xa29
+ *(.debug_info)
+ .debug_info    0x00000000      0x251 IRLEDTransmitter.o
+ .debug_info    0x00000251      0x123 uart.o
+ .debug_info    0x00000374       0x71 port.o
+ .debug_info    0x000003e5       0x7e timer.o
+ .debug_info    0x00000463      0x5c6 serial_streaming.o
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0x4fb
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x129 IRLEDTransmitter.o
+ .debug_abbrev  0x00000129       0xb9 uart.o
+ .debug_abbrev  0x000001e2       0x3d port.o
+ .debug_abbrev  0x0000021f       0x46 timer.o
+ .debug_abbrev  0x00000265      0x296 serial_streaming.o
+
+.debug_line     0x00000000      0x890
+ *(.debug_line)
+ .debug_line    0x00000000      0x1dc IRLEDTransmitter.o
+ .debug_line    0x000001dc      0x145 uart.o
+ .debug_line    0x00000321       0x7b port.o
+ .debug_line    0x0000039c       0x84 timer.o
+ .debug_line    0x00000420      0x470 serial_streaming.o
+
+.debug_frame    0x00000000      0x180
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 IRLEDTransmitter.o
+ .debug_frame   0x00000030       0x60 uart.o
+ .debug_frame   0x00000090       0x20 port.o
+ .debug_frame   0x000000b0       0x20 timer.o
+ .debug_frame   0x000000d0       0xb0 serial_streaming.o
+
+.debug_str      0x00000000      0x2f8
+ *(.debug_str)
+ .debug_str     0x00000000      0x15c IRLEDTransmitter.o
+                                0x1a0 (size before relaxing)
+ .debug_str     0x0000015c       0x6b uart.o
+                                0x135 (size before relaxing)
+ .debug_str     0x000001c7       0x14 port.o
+                                 0xcc (size before relaxing)
+ .debug_str     0x000001db       0x17 timer.o
+                                 0xd4 (size before relaxing)
+ .debug_str     0x000001f2      0x106 serial_streaming.o
+                                0x27f (size before relaxing)
+
+.debug_loc      0x00000000      0x34c
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x30 IRLEDTransmitter.o
+ .debug_loc     0x00000030       0x18 uart.o
+ .debug_loc     0x00000048      0x304 serial_streaming.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(IRLEDTransmitter.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0xc0
+ .debug_ranges  0x00000000       0x60 IRLEDTransmitter.o
+ .debug_ranges  0x00000060       0x60 serial_streaming.o
